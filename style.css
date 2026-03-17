@@ -150,14 +150,22 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
+    justify-content: flex-end;
 }
 
 .bar {
     width: 60%;
     border-radius: 12px 12px 0 0;
-    transition: height 1s ease-in-out;
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     background: linear-gradient(to top, var(--primary), var(--secondary));
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.2);
+}
+
+.bar:hover {
+    filter: brightness(1.2);
+    box-shadow: 0 0 30px rgba(0, 242, 254, 0.4);
 }
 
 .bar::after {
