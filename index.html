@@ -24,96 +24,12 @@
             <p>Optimizing the digital world through energy-efficient sorting. A deep dive into the power consumption of
                 hybrid algorithms.</p>
             <div class="hero-btns">
-                <a href="#about" class="btn btn-primary">Explore Research</a>
-                <a href="https://github.com/SYuskanth/hybrid_sort_energy_project" class="btn btn-outline"
-                    id="repo-link"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://github.com/SYuskanth/hybrid_sort_energy_project" class="btn btn-primary"
+                    id="repo-link"><i class="fab fa-github"></i> GitHub Repository</a>
                 <a href="https://www.kaggle.com/datasets/yuskanthansusanthan/hybrid-sorting-energy-data" target="_blank"
-                    class="btn btn-outline"><i class="fas fa-database"></i> Dataset</a>
+                    class="btn btn-outline"><i class="fas fa-database"></i> External Dataset</a>
             </div>
         </div>
-    </section>
-
-    <section id="about" class="container" style="padding: 100px 0;">
-        <div style="text-align: center; margin-bottom: 60px;">
-            <h2 style="font-size: 3rem; margin-bottom: 20px;">The Methodology</h2>
-            <p style="color: var(--text-muted); max-width: 800px; margin: 0 auto;">Our study leverages Intel Power
-                Gadget to measure the precise energy footprint (in Joules) of various hybrid sorting implementations
-                across massive datasets.</p>
-        </div>
-
-        <div class="card-grid">
-            <div class="card">
-                <i class="fas fa-bolt"></i>
-                <h3>Dual Pivot Quicksort</h3>
-                <p>The standard in modern Java and Android systems. High performance with a focus on cache locality.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-leaf"></i>
-                <h3>Timsort</h3>
-                <p>Derived from merge sort and insertion sort. Designed to perform exceptionally well on real-world
-                    data.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-microchip"></i>
-                <h3>Introsort</h3>
-                <p>A robust hybrid of Quicksort, Heapsort, and Insertion sort, ensuring O(n log n) even in worst-case
-                    scenarios.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-code-branch"></i>
-                <h3>Recombinant Sort</h3>
-                <p>Experimental hybrid approach merging multiple strategies for optimal energy-to-runtime ratio.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-microchip"></i>
-                <h3>Hybrid Quick-Insertion</h3>
-                <p>Combines the speed of Quicksort with the efficiency of Insertion Sort for small subarrays.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="viz-section container">
-        <div style="text-align: center;">
-            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Energy Consumption Analysis</h2>
-            <p style="color: var(--text-muted);">Comparison of Total Energy (Joules) for 1,000,000 Elements</p>
-        </div>
-
-        <div class="chart-container">
-            <div class="mock-chart">
-                <div class="bar-wrapper">
-                    <div class="bar" style="height: 80%;" data-value="14.2J"></div>
-                    <span class="bar-label">DualPivotQS</span>
-                </div>
-                <div class="bar-wrapper">
-                    <div class="bar" style="height: 65%; background: var(--accent);" data-value="11.5J"></div>
-                    <span class="bar-label">Timsort</span>
-                </div>
-                <div class="bar-wrapper">
-                    <div class="bar" style="height: 72%;" data-value="12.8J"></div>
-                    <span class="bar-label">Introsort</span>
-                </div>
-                <div class="bar-wrapper">
-                    <div class="bar" style="height: 90%; background: #ff4d4d;" data-value="16.1J"></div>
-                    <span class="bar-label">HybridQuick</span>
-                </div>
-                <div class="bar-wrapper">
-                    <div class="bar" style="height: 55%; background: #00ff88;" data-value="9.8J"></div>
-                    <span class="bar-label">Recombinant</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="links-section container">
-        <h2>Open Source Contribution</h2>
-        <p style="color: var(--text-muted); margin-bottom: 30px;">Access the complete Python implementation and
-            measurement logs.</p>
-        <a href="https://github.com/SYuskanth/hybrid_sort_energy_project" class="btn btn-primary"
-            id="final-repo-link">Clone Repository</a>
-        <a href="https://www.kaggle.com/datasets/yuskanthansusanthan/hybrid-sorting-energy-data" target="_blank"
-            class="btn btn-outline"><i class="fas fa-database"></i> Kaggle Dataset</a>
-        <a href="https://SYuskanth.github.io/hybrid_sort_energy_project/" class="btn btn-outline" id="hosted-link">Live
-            Metrics</a>
     </section>
 
     <footer>
@@ -121,30 +37,6 @@
             <p>&copy; 2026 Hybrid Sort Energy Research. Built for Sustainability.</p>
         </div>
     </footer>
-
-    <script>
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Chart animation
-        window.addEventListener('load', () => {
-            const bars = document.querySelectorAll('.bar');
-            bars.forEach(bar => {
-                const finalHeight = bar.style.height;
-                bar.style.height = '0';
-                setTimeout(() => {
-                    bar.style.height = finalHeight;
-                }, 100);
-            });
-        });
-    </script>
 </body>
 
 </html>
