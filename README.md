@@ -11,7 +11,7 @@ The goal of this research is to identify sorting strategies that minimize the ca
 ## 📊 Portfolio
 
 The project includes a hosted portfolio demonstrating the findings:
-[View Portfolio](https://[USERNAME].github.io/hybrid_sort_energy_project/)
+[View Portfolio](https://SYuskanth.github.io/hybrid_sort_energy_project/)
 
 ## 🛠️ Tech Stack
 
